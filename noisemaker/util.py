@@ -94,7 +94,7 @@ def watermark(text, filename):
 
 def check_call(command, quiet=False):
     try:
-        subprocess.run(command, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=True)
+        subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=True)
 
     except Exception as e:
         if not quiet:
